@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#121518"
     android:layout_height="wrap_content">
 
     <TextView
@@ -13,11 +12,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
-
+        android:fontFamily="@font/literata_regular"
         android:singleLine="false"
         android:text="TextView"
-        android:textColor="#b3bdc4"
-        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/thumbnail_view"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,12 +30,14 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:fontFamily="@font/literata_regular"
         android:singleLine="false"
         android:text="TextView"
-        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textColor="@color/colorBlack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/thumbnail_view"
         app:layout_constraintTop_toBottomOf="@+id/title_view2"
         app:layout_constraintVertical_bias="0.0" />
@@ -56,12 +58,10 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="#c0c0c0"
         android:background="?android:attr/listDivider"
+        android:backgroundTint="#5c5656"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/thumbnail_view" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

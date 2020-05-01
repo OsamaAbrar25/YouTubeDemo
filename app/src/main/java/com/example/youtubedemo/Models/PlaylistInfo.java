@@ -1,4 +1,4 @@
-package com.example.youtubedemo;
+package com.example.youtubedemo.Models;
 
 public class PlaylistInfo {
     private String playlistId;

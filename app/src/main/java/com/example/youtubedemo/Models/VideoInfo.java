@@ -1,4 +1,4 @@
-package com.example.youtubedemo;
+package com.example.youtubedemo.Models;
 
 public class VideoInfo {
     private String videoId;

@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#1b1f23"
     android:layout_height="match_parent"
-    tools:context=".Screen2Activity">
+    tools:context=".Activities.VideoActivity">
 
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/playerview"

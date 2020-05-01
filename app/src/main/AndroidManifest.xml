@@ -11,10 +11,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-       <activity android:name=".Screen1Activity" android:configChanges="orientation|screenSize" />
-        <activity android:name=".Screen2Activity" android:configChanges="orientation|screenSize" />
+        <activity android:name=".LoginActivity"></activity>
         <activity
-            android:name=".MainActivity" android:configChanges="orientation|screenSize">
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".Activities.SubjectActivity" />
+        <activity
+            android:name=".Activities.ClassActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Activities.VideoActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

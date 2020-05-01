@@ -1,4 +1,4 @@
-package com.example.youtubedemo;
+package com.example.youtubedemo.Adapters;
 
 import android.content.Context;
 import android.preference.PreferenceManager;
@@ -12,10 +12,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.youtube.player.YouTubeInitializationResult;
+import com.example.youtubedemo.R;
+import com.example.youtubedemo.Models.VideoInfo;
 import com.google.android.youtube.player.YouTubePlayer;
-import com.google.android.youtube.player.YouTubeThumbnailLoader;
-import com.google.android.youtube.player.YouTubeThumbnailView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -98,7 +97,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoHolder>
                 public void onClick(View v) {
 
                     video_id = arrayList.get(getAdapterPosition()).getVideoId();
-                    PreferenceManager.getDefaultSharedPreferences(context).edit().putString("VIDEO_ID", video_id).apply();
+                    //PreferenceManager.getDefaultSharedPreferences(context).edit().putString("VIDEO_ID", video_id).apply();
                     Toast.makeText(context, ""+getAdapterPosition(), Toast.LENGTH_SHORT).show();
                     youTubePlayer.loadVideo(video_id);
                 }
